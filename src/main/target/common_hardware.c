@@ -154,7 +154,10 @@
     #if !defined(MS5611_I2C_BUS)
         #define MS5611_I2C_BUS BARO_I2C_BUS
     #endif
-    BUSDEV_REGISTER_I2C(busdev_ms5611,      DEVHW_MS5611,       MS5611_I2C_BUS,     0x77,               NONE,           DEVFLAGS_USE_RAW_REGISTERS, 0);
+    #if !defined(MS5611_ADDRESS)
+        #define MS5611_ADDRESS 0x77
+    #endif
+    BUSDEV_REGISTER_I2C(busdev_ms5611,      DEVHW_MS5611,       MS5611_I2C_BUS,     MS5611_ADDRESS,               NONE,           DEVFLAGS_USE_RAW_REGISTERS, 0);
     #endif
 #endif
 
