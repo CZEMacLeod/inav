@@ -1,0 +1,5 @@
+target_stm32f722xe(C3DOGI1)
+target_stm32f722xe(C3DOGI1Q)
+target_stm32f722xe(C3DOGI1H)
+target_stm32f722xe(C3DOGI1O)
+target_stm32f722xe(C3DOGI11)
