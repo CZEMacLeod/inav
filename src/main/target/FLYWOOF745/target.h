@@ -107,7 +107,6 @@
 #define SPI4_MISO_PIN           PE5
 #define SPI4_MOSI_PIN           PE6
 
-#define USE_OSD
 
 #define USE_MAX7456
 #define MAX7456_SPI_BUS         BUS_SPI2
@@ -120,7 +119,6 @@
 #define ENABLE_BLACKBOX_LOGGING_ON_SPIFLASH_BY_DEFAULT
 
 #define USE_I2C
-
 #define USE_I2C_DEVICE_1
 #define I2C1_SCL                PB6
 #define I2C1_SDA                PB7
@@ -186,3 +184,8 @@
 #define TARGET_IO_PORTE 0xffff
 
 #define MAX_PWM_OUTPUT_PORTS       8
+
+// *************** PINIO ***************************
+#define USE_PINIO
+#define USE_PINIOBOX
+#define PINIO1_PIN                  PC0
